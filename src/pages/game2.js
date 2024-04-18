@@ -8,7 +8,6 @@ import movies from "../components/MovieList.js";
 function Game2({ totalPoints, setTotalPoints }) {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [selectedMovie, setSelectedMovie] = useState("");
   const [inputText, setInputText] = useState("");
   const correctMovie = "Spiderman";
   const navigate = useNavigate();
@@ -25,23 +24,21 @@ function Game2({ totalPoints, setTotalPoints }) {
     );
     setFilteredMovies(filtered);
     setShowDropdown(query.length > 0);
-    setSelectedMovie("");
   }
 
   function selectMovie(movie) {
-    setSelectedMovie(movie);
     setShowDropdown(false);
     checkMovie(movie);
   }
 
   function checkMovie(movie) {
     if (movie === correctMovie) {
-      if (frameNum == 1) {
-        totalPoints += 10;
-      } else if (frameNum == 2) {
-        totalPoints += 7;
+      if (frameNum === 1) {
+        setTotalPoints(totalPoints + 10);
+      } else if (frameNum === 2) {
+        setTotalPoints(totalPoints + 7);
       } else {
-        totalPoints += 5;
+        setTotalPoints(totalPoints + 5);
       }
       navigate("/win");
     } else {

@@ -9,9 +9,8 @@ import movies from "../components/MovieList.js";
 function MovieDropDown({ totalPoints, setTotalPoints }) {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [selectedMovie, setSelectedMovie] = useState("");
   const [inputText, setInputText] = useState("");
-  const correctMovie = "Spider-Man: Homecoming";
+  const correctMovie = "Mission: Impossible";
   const navigate = useNavigate();
   const [frameNum, setFrameNum] = useState(1);
 
@@ -31,20 +30,18 @@ function MovieDropDown({ totalPoints, setTotalPoints }) {
     );
     setFilteredMovies(filtered);
     setShowDropdown(query.length > 0);
-    setSelectedMovie("");
   }
 
   function selectMovie(movie) {
-    setSelectedMovie(movie);
     setShowDropdown(false);
     checkMovie(movie);
   }
 
   function checkMovie(movie) {
     if (movie === correctMovie) {
-      if (frameNum == 1) {
+      if (frameNum === 1) {
         setTotalPoints(totalPoints + 10);
-      } else if (frameNum == 2) {
+      } else if (frameNum === 2) {
         setTotalPoints(totalPoints + 7);
       } else {
         setTotalPoints(totalPoints + 5);

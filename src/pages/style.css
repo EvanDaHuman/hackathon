@@ -1,0 +1,220 @@
+.frame {
+    background-color: #6481d2;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+  }
+  
+  .frame .text-wrapper {
+    color: #ffffff;
+    font-family: "Metal Mania-Regular", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    left: 33px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 9px;
+  }
+  
+  .frame .div {
+    color: #ffffff;
+    font-family: "Metal Mania-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 39px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 83px;
+    width: 323px;
+  }
+  
+  .frame .overlap {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 50px;
+    left: 100px;
+    position: absolute;
+    top: 200px;
+    width: 200px;
+  }
+  
+  .frame .text-wrapper-2 {
+    color: #6481d2;
+    font-family: "Metal Mania-Regular", Helvetica;
+    font-size: 35px;
+    font-weight: 400;
+    left: 33px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 3px;
+  }
+  
+  .frame .overlap-group {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 50px;
+    left: 100px;
+    position: absolute;
+    top: 289px;
+    width: 200px;
+  }
+  
+  .frame .text-wrapper-3 {
+    color: #6481d2;
+    font-family: "Metal Mania-Regular", Helvetica;
+    font-size: 35px;
+    font-weight: 400;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 2px;
+  }
+  
+  .frame .film-reel-icon {
+    height: 242px;
+    left: 1564px;
+    object-fit: cover;
+    position: absolute;
+    top: 1309px;
+    width: 242px;
+  }
+  
+  .frame .overlap-group-2 {
+    background-color: #ffffff;
+    border-radius: 40px;
+    height: 80px;
+    left: 13px;
+    position: absolute;
+    top: 308px;
+    width: 80px;
+  }
+  
+  .frame .ellipse {
+    background-color: #6481d2;
+    border-radius: 10px;
+    height: 20px;
+    left: 30px;
+    position: absolute;
+    top: 8px;
+    width: 20px;
+  }
+  
+  .frame .ellipse-2 {
+    background-color: #6481d2;
+    border-radius: 10px;
+    height: 20px;
+    left: 30px;
+    position: absolute;
+    top: 52px;
+    width: 20px;
+  }
+  
+  .frame .ellipse-3 {
+    background-color: #6481d2;
+    border-radius: 10px;
+    height: 20px;
+    left: 8px;
+    position: absolute;
+    top: 30px;
+    width: 20px;
+  }
+  
+  .frame .ellipse-4 {
+    background-color: #6481d2;
+    border-radius: 5px;
+    height: 10px;
+    left: 35px;
+    position: absolute;
+    top: 35px;
+    width: 10px;
+  }
+  
+  .frame .ellipse-5 {
+    background-color: #6481d2;
+    border-radius: 10px;
+    height: 20px;
+    left: 52px;
+    position: absolute;
+    top: 30px;
+    width: 20px;
+  }
+  
+  .frame .overlap-2 {
+    height: 76px;
+    left: 307px;
+    position: absolute;
+    top: 212px;
+    width: 84px;
+  }
+  
+  .frame .rectangle {
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 64px;
+    left: 33px;
+    position: absolute;
+    top: 25px;
+    transform: rotate(90deg);
+    width: 37px;
+  }
+  
+  .frame .ellipse-6 {
+    background-color: #ffffff;
+    border-radius: 22.5px;
+    height: 45px;
+    left: 16px;
+    position: absolute;
+    top: 0;
+    transform: rotate(90deg);
+    width: 45px;
+  }
+  
+  .frame .ellipse-7 {
+    background-color: #ffffff;
+    border-radius: 17.5px;
+    height: 35px;
+    left: 49px;
+    position: absolute;
+    top: 10px;
+    transform: rotate(90deg);
+    width: 35px;
+  }
+  
+  .frame .polygon {
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    width: 43px;
+  }
+  
+  .frame .ellipse-8 {
+    background-color: #6481d2;
+    border-radius: 7.5px;
+    height: 15px;
+    left: 59px;
+    position: absolute;
+    top: 20px;
+    width: 15px;
+  }
+  
+  .frame .ellipse-9 {
+    background-color: #6481d2;
+    border-radius: 10px;
+    height: 20px;
+    left: 28px;
+    position: absolute;
+    top: 12px;
+    width: 20px;
+  }
+  

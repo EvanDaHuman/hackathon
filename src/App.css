@@ -6,6 +6,16 @@ body {
   padding: 0;
   overflow-y: auto;
 }
+.text {
+  background-color: black; /* Add a semi-transparent background */
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  position: relative;
+  left: 20px; /* Adjust the horizontal position */
+  top: -40px; /* Adjust the vertical position */
+  font-weight: bold;
+}
 
 /* Home screen */
 .home-screen {
@@ -83,10 +93,50 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 150vh;
+  height: 100vh;
   background-color: lightblue;
 }
 
+.movie-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+.game3-movie-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  background-color: lightblue;
+}
+.game4-movie-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+
+  margin: 0px;
+  background-color: lightblue;
+}
+.text {
+  position: absolute;
+  top: 50%; /* Position the text in the center */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Add a semi-transparent background */
+  padding: 10px;
+  border-radius: 5px;
+}
 .input-container {
   margin-bottom: 100px;
 }

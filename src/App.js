@@ -15,40 +15,13 @@ import LosePage from "./pages/lose";
 function App() {
   const [totalPoints, setTotalPoints] = useState(0);
 
-  // Initialize the variables with the values from localStorage or false if not present
-  const [game1Played, setGame1Played] = useState(
-    localStorage.getItem("game1Played") === "false"
-  );
-  const [game2Played, setGame2Played] = useState(
-    localStorage.getItem("game2Played") === "false"
-  );
-  const [game3Played, setGame3Played] = useState(
-    localStorage.getItem("game3Played") === "false"
-  );
-  const [game4Played, setGame4Played] = useState(
-    localStorage.getItem("game4Played") === "false"
-  );
-  const [game5Played, setGame5Played] = useState(
-    localStorage.getItem("game5Played") === "false"
-  );
   return (
     <>
       <h1 className="points">Total Points: {totalPoints}</h1>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="/game"
-            element={
-              <Game
-                game1={game1Played}
-                game2={game2Played}
-                game3={game3Played}
-                game4={game4Played}
-                game5={game5Played}
-              />
-            }
-          />
+          <Route path="/game" element={<Game />} />
 
           <Route path="/stats" element={<Stats />} />
           <Route
@@ -57,8 +30,6 @@ function App() {
               <MovieDropDown
                 totalPoints={totalPoints}
                 setTotalPoints={setTotalPoints}
-                game1Played={game1Played}
-                setGame1Played={setGame1Played}
               />
             }
           />

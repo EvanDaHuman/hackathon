@@ -45,9 +45,9 @@ function Game3({ totalPoints, setTotalPoints }) {
         setTotalPoints(totalPoints + 10);
       } else if (frameNum === 2) {
         setTotalPoints(totalPoints + 7);
-      } else if (frameNum === 3){
+      } else if (frameNum === 3) {
         setTotalPoints(totalPoints + 5);
-      } else if (frameNum === 4){
+      } else if (frameNum === 4) {
         setTotalPoints(totalPoints + 3);
       } else {
         setTotalPoints(totalPoints + 1);
@@ -66,7 +66,10 @@ function Game3({ totalPoints, setTotalPoints }) {
   }
 
   return (
-    <div className="movie-dropdown">
+    <div
+      className="game3-movie-dropdown"
+      style={{ height: showDropdown ? "150vh" : "100vh" }}
+    >
       <Link to="/game">
         <button className="backButton"> Back</button>
       </Link>

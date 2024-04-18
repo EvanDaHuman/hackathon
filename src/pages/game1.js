@@ -4,14 +4,14 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 
 import movies from "../components/MovieList.js";
-import totalPoints from  "./App.js";
+// import totalPoints from  "./App.js";
 
-function MovieDropDown() {
+function MovieDropDown({ totalPoints, setTotalPoints }) {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedMovie, setSelectedMovie] = useState("");
   const [inputText, setInputText] = useState("");
-  const correctMovie = "Spiderman";
+  const correctMovie = "Spider-Man: Homecoming";
   const navigate = useNavigate();
   const [frameNum, setFrameNum] = useState(1);
 
@@ -42,13 +42,13 @@ function MovieDropDown() {
 
   function checkMovie(movie) {
     if (movie === correctMovie) {
-			if (frameNum == 1){
-				totalPoints += 10;
-			} else if (frameNum == 2){
-				totalPoints += 7;
-			} else {
-				totalPoints += 5;
-			}
+      if (frameNum == 1) {
+        setTotalPoints(totalPoints + 10);
+      } else if (frameNum == 2) {
+        setTotalPoints(totalPoints + 7);
+      } else {
+        setTotalPoints(totalPoints + 5);
+      }
       navigate("/win");
     } else {
       console.log("Incorrect. Try again.");

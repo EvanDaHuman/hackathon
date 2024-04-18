@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
+import movies from "../components/MovieList.js";
+// import totalPoints from  "./App.js";
 
-function Game2() {
+function Game2({ totalPoints, setTotalPoints }) {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedMovie, setSelectedMovie] = useState("");
@@ -34,13 +36,13 @@ function Game2() {
 
   function checkMovie(movie) {
     if (movie === correctMovie) {
-			// if (frameNum == 1){
-			// 	totalPoints += 10;
-			// } else if (frameNum == 2){
-			// 	totalPoints += 7;
-			// } else {
-			// 	totalPoints += 5;
-			// }
+      if (frameNum == 1) {
+        totalPoints += 10;
+      } else if (frameNum == 2) {
+        totalPoints += 7;
+      } else {
+        totalPoints += 5;
+      }
       navigate("/win");
     } else {
       console.log("Incorrect. Try again.");
@@ -61,7 +63,7 @@ function Game2() {
       </Link>
       <h1 className="title">Guess the movie by the soundtrack</h1>
       <h2 className="subtitle">
-        {lengthArray[frameNum-1]} seconds: {difficultryArray[frameNum-1]};
+        {lengthArray[frameNum - 1]} seconds: {difficultyArray[frameNum - 1]};
       </h2>
       {imageArray[frameNum - 1]}
       <input

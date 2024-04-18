@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import "./App.css";
 import Home from "./pages/home";
 import Game from "./pages/game";
@@ -11,26 +12,39 @@ import Game5 from "./pages/game5";
 import WinPage from "./pages/win";
 import LosePage from "./pages/lose";
 
-const [totalPoints, settotalPoints] = useState(0);
-
 function App() {
+  const [totalPoints, settotalPoints] = useState(0);
   return (
     <>
-    <div className = "point-display">
-      
-    </div>
+      <h1 className="points">Total Points: {totalPoints}</h1>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/game" element={<Game />} />
-          <Route path = "/stats" element = {<Stats />} />
-          <Route path = "/game/game1" element = {<MovieDropDown />} />
-          <Route path = "/game/game2" element = {<Game2 />} />
-          <Route path = "/game/game3" element = {<Game3 />} />
-          <Route path = "/game/game4" element = {<Game4 />} />
-          <Route path = "/game/game5" element = {<Game5 />} />
-          <Route path = "/win" element = {<WinPage/>} />
-          <Route path = "/lose" element = {<LosePage />} />
+          <Route path="/stats" element={<Stats />} />
+          <Route
+            path="/game/game1"
+            element={
+              <MovieDropDown
+                totalPoints={totalPoints}
+                setTotalPoints={settotalPoints}
+              />
+            }
+          />
+          <Route
+            path="/game/game2"
+            element={
+              <Game2
+                totalPoints={totalPoints}
+                setTotalPoints={settotalPoints}
+              />
+            }
+          />
+          <Route path="/game/game3" element={<Game3 />} />
+          <Route path="/game/game4" element={<Game4 />} />
+          <Route path="/game/game5" element={<Game5 />} />
+          <Route path="/win" element={<WinPage />} />
+          <Route path="/lose" element={<LosePage />} />
         </Routes>
       </Router>
     </>

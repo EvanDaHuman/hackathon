@@ -15,10 +15,21 @@ body {
   height: 100vh;
   background-color: lightblue;
 }
-
+.homescreen-caption {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #6481d2; /* Blue color */
+  border: none;
+  border-radius: 5px;
+  margin-top: 1em;
+  transition: background-color 0.3s ease;
+}
 .header {
   color: #6481d2; /* Blue color */
-  font-size: 3em;
+  font-size: 100px;
   font: bold;
   margin-bottom: 0.5em;
 }
@@ -189,13 +200,6 @@ body {
   background-color: lightblue;
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-}
-
-.header {
-  color: #6481d2;
-  font-size: 3em;
-  font-weight: bold;
-  margin-bottom: 0;
 }
 
 /* Caption with filled box, no underline, and bold text */

@@ -22,11 +22,27 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/game" element={<Game />} />
           <Route path="/stats" element={<Stats />} />
-          <Route path="/game/game1" element={<MovieDropDown />} />
-          <Route path="/game2" element={<Game2 />} />
-          <Route path="/game3" element={<Game3 />} />
-          <Route path="/game4" element={<Game4 />} />
-          <Route path="/game5" element={<Game5 />} />
+          <Route
+            path="/game/game1"
+            element={
+              <MovieDropDown
+                totalPoints={totalPoints}
+                setTotalPoints={settotalPoints}
+              />
+            }
+          />
+          <Route
+            path="/game/game2"
+            element={
+              <Game2
+                totalPoints={totalPoints}
+                setTotalPoints={settotalPoints}
+              />
+            }
+          />
+          <Route path="/game/game3" element={<Game3 />} />
+          <Route path="/game/game4" element={<Game4 />} />
+          <Route path="/game/game5" element={<Game5 />} />
           <Route path="/win" element={<WinPage />} />
           <Route path="/lose" element={<LosePage />} />
         </Routes>

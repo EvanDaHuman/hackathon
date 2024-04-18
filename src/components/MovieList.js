@@ -76,7 +76,6 @@ const movies = [
   "Das Boot",
   "Dead Poets Society",
   "Die Hard",
-  "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
   "Eternal Sunshine of the Spotless Mind",
   "Fargo",
   "Finding Nemo",
@@ -128,7 +127,7 @@ const movies = [
   "Warrior",
   "Zombieland",
   "Unforgiven",
-  "Usual Suspects, The",
+  "Usual Suspects",
 ];
 
 export default movies;

@@ -4,6 +4,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-y: auto;
 }
 
 /* Home screen */
@@ -100,6 +101,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.points {
+  background-color: lightblue;
+  margin-right: 20px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: white;
 }
 
 .dropdown-content a {

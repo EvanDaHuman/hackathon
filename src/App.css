@@ -1,0 +1,281 @@
+/* App.css */
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Home screen */
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.header {
+  color: #6481d2; /* Blue color */
+  font-size: 3em;
+  font: bold;
+  margin-bottom: 0.5em;
+}
+
+.caption {
+  color: #6481d2; /* Blue color */
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.stats-screen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size:18px;
+  margin:0;
+  padding:0;
+}
+
+.home-btn,
+.stats-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  background-color: #6481d2; /* Blue color */
+  border: none;
+  border-radius: 5px;
+  margin-top: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover,
+.stats-btn:hover {
+  background-color: #4b63aa; /* Darker blue color on hover */
+}
+
+/* Dropdown menu */
+.movie-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.input-container {
+  margin-bottom: 100px;
+}
+
+.input-container input {
+  padding: 50px;
+  font-size: 24px;
+  width: 600px;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-content a {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: #6481d2; /* Specify the background color here */
+  border: 1px solid #6481d2;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #4b63aa;
+}
+
+/* Title screen */
+.title-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6481d2; /* Blue color */
+}
+
+.title {
+  color: white;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.subtitle {
+  color: white;
+  font-size: 1.5em;
+  
+}
+
+/* Back button */
+.backButton {
+  background-color: #6481d2; /* Blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.backButton:hover {
+  background-color: #4b63aa; /* Darker blue color on hover */
+}
+
+.backButtonlink {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Win page */
+.win-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.win-message {
+  color: #6481d2; /* Blue color */
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.go-home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  background-color: #6481d2; /* Blue color */
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.go-home-button:hover {
+  background-color: #4b63aa; /* Darker blue color on hover */
+}
+
+/* Game screen */
+.game-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: lightblue;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.header {
+  color: #6481d2;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0  ;
+}
+
+/* Caption with filled box, no underline, and bold text */
+.caption {
+  color: black; /* Set text color to black */
+  font-size: 1.5em; /* Adjust font size as needed */
+  margin-bottom: 1em; /* Adjust margin as needed */
+  background-color: #6481d2; /* Blue background color */
+  padding: 10px; /* Add padding inside the box */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  text-decoration: none; /* Remove underline */
+
+  
+  font-weight: bold; /* Make the text bold */
+}
+
+
+
+
+
+/* Game button container */
+.button-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 20px; /* Add space between buttons */
+  margin-top: 2em;
+}
+
+/* Game button */
+.game-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px; /* Adjust width */
+  height: 180px; /* Adjust height */
+  background-color: #6481d2; /* Blue background color */
+  border: none;
+  border-radius: 50%;
+  text-decoration: none;
+  color: white; /* White text color */
+  font-size: 1.2em; /* Adjust font size */
+  transition: background-color 0.3s ease;
+}
+
+.game-button:hover {
+  background-color: #4b63aa; /* Darker blue color on hover */
+}
+
+
+.game-button:hover {
+  background-color: #4b63aa;
+}
+
+.text-box {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 18px;
+  width: 300px;
+  background-color: #6481d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.text-box::placeholder {
+  color: white;
+}
+
+.movie-button{
+  background-color: #6481d2; /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  margin-bottom:5px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* End of CSS */

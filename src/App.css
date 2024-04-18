@@ -33,6 +33,12 @@ body {
   font: bold;
   margin-bottom: 0.5em;
 }
+.game-header {
+  color: #6481d2; /* Blue color */
+  font-size: 50px;
+  font: bold;
+  margin-bottom: 0.5em;
+}
 
 .caption {
   color: #6481d2; /* Blue color */

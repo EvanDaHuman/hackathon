@@ -130,6 +130,7 @@ const movies = [
   "Zombieland",
   "Unforgiven",
   "Usual Suspects",
+  "Fast and Furious 5"
 ];
 
 export default movies;

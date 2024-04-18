@@ -80,8 +80,24 @@ function App() {
               />
             }
           />
-          <Route path="/game/game4" element={<Game4 />} />
-          <Route path="/game/game5" element={<Game5 />} />
+          <Route
+            path="/game/game4"
+            element={
+              <Game4
+                totalPoints={totalPoints}
+                setTotalPoints={setTotalPoints}
+              />
+            }
+          />
+          <Route
+            path="/game/game5"
+            element={
+              <Game5
+                totalPoints={totalPoints}
+                setTotalPoints={setTotalPoints}
+              />
+            }
+          />
           <Route path="/win" element={<WinPage />} />
           <Route path="/lose" element={<LosePage />} />
         </Routes>

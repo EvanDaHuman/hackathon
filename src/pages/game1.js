@@ -6,7 +6,12 @@ import { useNavigate } from "react-router-dom";
 import movies from "../components/MovieList.js";
 // import totalPoints from  "./App.js";
 
-function MovieDropDown({ totalPoints, setTotalPoints }) {
+function MovieDropDown({
+  totalPoints,
+  setTotalPoints,
+  game1Played,
+  setGame1Played,
+}) {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [inputText, setInputText] = useState("");
@@ -46,6 +51,7 @@ function MovieDropDown({ totalPoints, setTotalPoints }) {
       } else {
         setTotalPoints(totalPoints + 5);
       }
+      setGame1Played(true);
       navigate("/win");
     } else {
       console.log("Incorrect. Try again.");
@@ -54,6 +60,7 @@ function MovieDropDown({ totalPoints, setTotalPoints }) {
       if (frameNum >= 3) {
         console.log("ran");
         setFrameNum(1);
+        setGame1Played(true);
         navigate("/lose");
       }
     }

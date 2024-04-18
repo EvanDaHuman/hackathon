@@ -1,28 +1,36 @@
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import { useState } from "react";
 
-const Game = () => {
+const Game = ({
+  game1Played,
+  game2Played,
+  game3Played,
+  game4Played,
+  game5Played,
+}) => {
   return (
     <div className="game-screen">
       <Link to="/">
         <button className="backButton"> Back</button>
       </Link>
       <h1 className="game-header">Minigames</h1>
-      <Link to="game1">
-        <div className="button-container">
-          <Button
-            style={{
-              backgroundImage: "url('./image2.png')",
-              backgroundSize: "cover",
-              width: "200px",
-              height: "200px",
-              borderRadius: "50%",
-            }}
-          ></Button>
-        </div>
-        <p className="caption">Guess the movie based on frames</p>
-      </Link>
-
+      {!game1Played && (
+        <Link to="game1">
+          <div className="button-container">
+            <Button
+              style={{
+                backgroundImage: "url('./image2.png')",
+                backgroundSize: "cover",
+                width: "200px",
+                height: "200px",
+                borderRadius: "50%",
+              }}
+            ></Button>
+          </div>
+          <p className="caption">Guess the movie based on frames</p>
+        </Link>
+      )}
       <Link to="game2">
         <div className="button-container">
           <Button

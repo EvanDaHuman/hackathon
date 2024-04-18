@@ -52,6 +52,7 @@ function Game2({ totalPoints, setTotalPoints }) {
     } else {
       console.log("Incorrect. Try again.");
       setAudioNum(audioNum + 1);
+      <audio ref={audioRef} src={audioFiles[audioNum - 1]} />;
 
       if (audioNum >= 3) {
         console.log("ran");

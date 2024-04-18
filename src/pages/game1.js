@@ -75,7 +75,7 @@ function MovieDropDown() {
       <input
         className="text-box"
         type="text"
-        placeholder="Enter movie..."
+        placeholder="Search for movie..."
         onChange={filterMovies}
       />
       {showDropdown && (

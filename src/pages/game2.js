@@ -88,7 +88,7 @@ function Game2({ totalPoints, setTotalPoints }) {
           borderRadius: "50%",
         }}
       >
-        <img src="/playAudio.png" width="200" height="200"></img>
+        <img src="/Group 8.svg" width="200" height="200"></img>
       </button>
 
       <input

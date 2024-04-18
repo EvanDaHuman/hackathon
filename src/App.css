@@ -40,7 +40,7 @@ body {
 }
 .header {
   color: #6481d2; /* Blue color */
-  font-size: 100px;
+  font-size: 30px;
   font: bold;
   margin-bottom: 0.5em;
 }
@@ -341,5 +341,47 @@ body {
   border: none;
   border-radius: 5px;
 }
+
+.leaderboard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #6481d2; /* Blue color */
+  border-radius: 5px;
+}
+
+.leaderboard2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+  
+  border: 1px solid #6481d2; /* Blue color */
+  border-radius: 5px;
+}
+
+/* Style for each column */
+.column {
+  text-align: center;
+}
+
+.rank {
+  color: #6481d2; /* Blue color */
+  font-weight: bold;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.total-points {
+  font-weight: bold;
+}
+
 
 /* End of CSS */

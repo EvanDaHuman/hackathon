@@ -222,13 +222,12 @@ body {
 
 /* Caption with filled box, no underline, and bold text */
 .caption {
-  color: black; /* Set text color to black */
+  color: white; /* Set text color to black */
   font-size: 1.5em; /* Adjust font size as needed */
   margin-bottom: 1em; /* Adjust margin as needed */
   background-color: #6481d2; /* Blue background color */
   padding: 10px; /* Add padding inside the box */
   border-radius: 5px; /* Optional: Add border radius for rounded corners */
-  text-decoration: none; /* Remove underline */
 
   font-weight: bold; /* Make the text bold */
 }

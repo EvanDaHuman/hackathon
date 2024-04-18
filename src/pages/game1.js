@@ -10,7 +10,7 @@ function MovieDropDown({ totalPoints, setTotalPoints }) {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [inputText, setInputText] = useState("");
-  const correctMovie = "Mission: Impossible";
+  const correctMovie = "Spider-Man: Homecoming";
   const navigate = useNavigate();
   const [frameNum, setFrameNum] = useState(1);
 

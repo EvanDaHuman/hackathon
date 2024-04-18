@@ -7,6 +7,8 @@ const movies = [
   "Black Panther",
   "Casablanca",
   "Citizen Kane",
+  "Dune",
+  "Dune 2",
   "The Dark Knight",
   "The Departed",
   "E.T. the Extra-Terrestrial",

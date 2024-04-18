@@ -13,7 +13,7 @@ import WinPage from "./pages/win";
 import LosePage from "./pages/lose";
 
 function App() {
-  const [totalPoints, settotalPoints] = useState(0);
+  const [totalPoints, setTotalPoints] = useState(0);
   return (
     <>
       <h1 className="points">Total Points: {totalPoints}</h1>
@@ -27,7 +27,7 @@ function App() {
             element={
               <MovieDropDown
                 totalPoints={totalPoints}
-                setTotalPoints={settotalPoints}
+                setTotalPoints={setTotalPoints}
               />
             }
           />
@@ -36,11 +36,11 @@ function App() {
             element={
               <Game2
                 totalPoints={totalPoints}
-                setTotalPoints={settotalPoints}
+                setTotalPoints={setTotalPoints}
               />
             }
           />
-          <Route path="/game/game3" element={<Game3 />} />
+          <Route path="/game/game3" element={<Game3 totalPoints={totalPoints} setTotalPoints={setTotalPoints}/>} />
           <Route path="/game/game4" element={<Game4 />} />
           <Route path="/game/game5" element={<Game5 />} />
           <Route path="/win" element={<WinPage />} />

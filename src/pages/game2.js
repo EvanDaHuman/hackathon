@@ -9,7 +9,7 @@ function Game2({ totalPoints, setTotalPoints }) {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [inputText, setInputText] = useState("");
-  const correctMovie = "Spiderman";
+  const correctMovie = "Mission: Impossible";
   const navigate = useNavigate();
   const [frameNum, setFrameNum] = useState(1);
 

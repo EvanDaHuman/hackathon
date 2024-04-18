@@ -17,12 +17,6 @@ function Game2({ totalPoints, setTotalPoints }) {
   let difficultyArray = ["Impossible", "Hard", "Easy"];
   let lengthArray = ["3", "15", "30"];
 
-  let imageArray = [
-    <img src="/movieFrame1.png" width="700" height="300" />,
-    <img src="/movieFrame2.png" width="700" height="300" />,
-    <img src="/movieFrame3.jpg" width="700" height="300" />,
-  ];
-
   function filterMovies(event) {
     setInputText(event.target.value);
     const query = event.target.value.toLowerCase();
@@ -71,11 +65,11 @@ function Game2({ totalPoints, setTotalPoints }) {
       <h2 className="subtitle">
         {lengthArray[frameNum - 1]} seconds: {difficultyArray[frameNum - 1]};
       </h2>
-      {imageArray[frameNum - 1]}
+
       <input
         className="text-box"
         type="text"
-        placeholder="Enter movie..."
+        placeholder="Search for movie..."
         onChange={filterMovies}
       />
       {showDropdown && (

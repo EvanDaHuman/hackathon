@@ -4,6 +4,7 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 
 import movies from "../components/MovieList.js";
+import totalPoints from  "./App.js";
 
 function MovieDropDown() {
   const [filteredMovies, setFilteredMovies] = useState([]);
@@ -41,6 +42,13 @@ function MovieDropDown() {
 
   function checkMovie(movie) {
     if (movie === correctMovie) {
+			if (frameNum == 1){
+				totalPoints += 10;
+			} else if (frameNum == 2){
+				totalPoints += 7;
+			} else {
+				totalPoints += 5;
+			}
       navigate("/win");
     } else {
       console.log("Incorrect. Try again.");

@@ -1,0 +1,181 @@
+.frame {
+    background-color: #6481d2;
+    height: 400px;
+    position: relative;
+    width: 400px;
+  }
+  
+  .frame .group {
+    height: 108px;
+    left: 146px;
+    position: absolute;
+    top: 282px;
+    width: 108px;
+  }
+  
+  .frame .overlap-group {
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 100px;
+    left: 150px;
+    position: absolute;
+    top: 20px;
+    width: 100px;
+  }
+  
+  .frame .rectangle {
+    background-color: #6481d2;
+    border-radius: 4px;
+    height: 50px;
+    left: 42px;
+    position: absolute;
+    top: 33px;
+    transform: rotate(90deg);
+    width: 29px;
+  }
+  
+  .frame .ellipse {
+    background-color: #6481d2;
+    border-radius: 18px;
+    height: 36px;
+    left: 28px;
+    position: absolute;
+    top: 12px;
+    transform: rotate(90deg);
+    width: 36px;
+  }
+  
+  .frame .polygon {
+    height: 28px;
+    left: 16px;
+    position: absolute;
+    top: 44px;
+    width: 33px;
+  }
+  
+  .frame .div {
+    background-color: #ffffff;
+    border-radius: 7.5px/8px;
+    height: 16px;
+    left: 38px;
+    position: absolute;
+    top: 23px;
+    width: 15px;
+  }
+  
+  .frame .ellipse-2 {
+    background-color: #6481d2;
+    border-radius: 10px;
+    height: 20px;
+    left: 58px;
+    position: absolute;
+    top: 25px;
+    width: 20px;
+  }
+  
+  .frame .ellipse-3 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 10px;
+    left: 63px;
+    position: absolute;
+    top: 30px;
+    width: 10px;
+  }
+  
+  .frame .overlap {
+    height: 108px;
+    left: 16px;
+    position: absolute;
+    top: 150px;
+    width: 108px;
+  }
+  
+  .frame .ellipse-4 {
+    background-color: #ffffff;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 49px;
+    position: absolute;
+    top: 46px;
+    width: 9px;
+  }
+  
+  .frame .img {
+    height: 9px;
+    left: 49px;
+    position: absolute;
+    top: 46px;
+    width: 9px;
+  }
+  
+  .frame .group-2 {
+    height: 108px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 108px;
+  }
+  
+  .frame .rectangle-2 {
+    background-color: #6481d2;
+    border-radius: 2px;
+    height: 22px;
+    left: 32px;
+    position: absolute;
+    top: 57px;
+    transform: rotate(45deg);
+    width: 6px;
+  }
+  
+  .frame .group-3 {
+    height: 108px;
+    left: 276px;
+    position: absolute;
+    top: 150px;
+    width: 108px;
+  }
+  
+  .frame .group-4 {
+    height: 108px;
+    left: 145px;
+    position: absolute;
+    top: 150px;
+    width: 108px;
+  }
+  
+  .frame .overlap-2 {
+    background-image: url(./ellipse-23.png);
+    background-size: 100% 100%;
+    height: 50px;
+    left: 20px;
+    position: absolute;
+    top: 332px;
+    width: 50px;
+  }
+  
+  .frame .line {
+    height: 22px;
+    left: 34px;
+    position: absolute;
+    top: 12px;
+    width: 5px;
+  }
+  
+  .frame .polygon-2 {
+    height: 13px;
+    left: 8px;
+    position: absolute;
+    top: 25px;
+    width: 8px;
+  }
+  
+  .frame .line-2 {
+    height: 5px;
+    left: 14px;
+    position: absolute;
+    top: 28px;
+    width: 24px;
+  }
+  

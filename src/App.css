@@ -103,13 +103,15 @@ body {
   align-items: center;
 }
 .points {
-  background-color: lightblue;
+  background-color: #6481d2;
   margin-right: 20px;
-  padding: 0;
+  padding: 10px;
   position: fixed;
   top: 0;
   right: 0;
   color: white;
+  border: none;
+  border-radius: 20px;
 }
 
 .dropdown-content a {

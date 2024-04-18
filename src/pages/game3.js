@@ -60,7 +60,7 @@ function Game3({ totalPoints, setTotalPoints }) {
       if (frameNum >= 5) {
         console.log("ran");
         setFrameNum(1);
-        navigate("/lose");
+        navigate('/lose', { state: { correctAnswer: correctMovie } }); // Pass correct answer to /lose route
       }
     }
   }

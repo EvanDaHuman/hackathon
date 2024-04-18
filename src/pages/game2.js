@@ -57,7 +57,7 @@ function Game2({ totalPoints, setTotalPoints }) {
       if (audioNum >= 3) {
         console.log("ran");
         setAudioNum(1);
-        navigate("/lose");
+        navigate('/lose', { state: { correctAnswer: correctMovie } }); // Pass correct answer to /lose route
       }
     }
   }
